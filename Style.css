@@ -1,0 +1,368 @@
+/*GENERAL*/
+
+body{
+    background-image:linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(Images/vecteezy_abstract-shape-geometric-background-2-hs0221.jpg);
+    animation: infinite 35s linear infinite;
+}
+
+@keyframes infinite{
+    0%{
+        background-position: 50% 0;
+    }
+
+    100%{
+        background-position: 50% -1000px;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    display: flex;
+    justify-items:space-evenly;
+    align-items: center;
+    height: 100vh;
+    padding: 50px;
+    margin: 0 auto;
+    z-index: 0;
+}
+.container{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    height:fit-content;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+/*NAVIGATION BAR*/
+.nav{
+    max-width: 100vw;
+    background-color: rgba(66, 62, 62, 0.548);
+    margin: 0px auto;
+    padding:10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-title{
+    align-self: flex-start;
+    color: white;
+    padding:10px;
+    margin:10px;
+}
+
+.nav-links{
+    color: white;
+    padding:10px;
+    margin:10px;
+    display: flex;
+    justify-self:space-around;
+    align-items: right;
+}
+
+.nav button{
+  background-color:rgb(27, 143, 238);
+  color: white;
+  border:1px solid rgb(0, 0, 0);   
+  box-shadow: 5px 5px 1px 1px rgba(1, 1, 15, 0.842);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+button:hover{
+    box-shadow: 0px 0px 1px 1px rgba(1, 1, 15, 0.842);
+}
+
+.nav ul{
+    list-style-type: none;
+}
+
+.nav a{
+    color: white;
+    padding:10px;
+    margin:10px;
+}
+
+/*USER CARD*/
+#card1{
+    background-color: rgb(255, 255, 255);
+    border-style:solid;
+    border-width: 5px;
+    border-color: rgba(160, 156, 156, 0.336);
+    display: flex;
+    position: absolute;
+    top:170px;
+    justify-items: center;
+    flex-direction: column;
+    align-self:center;
+    width: 800px;
+    height: 400px;
+}
+
+#card1 .header{
+    background-color: rgb(27, 143, 238);
+    color: white;
+    border-style: solid;
+    border-color: rgb(27, 143, 238);
+    height: 200px;
+    padding: 0;
+    margin: 0;
+    width: 800px;
+    position: relative;
+    top: -5px;
+    left: -5px;
+}
+
+#card1 .info{
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    font-size: large;
+    position: relative;
+    height: 300px;
+    top: 50px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#name{
+    position: relative;
+    top: 0px;
+}
+#location,#bio{
+    position: relative;
+    left: 20px;
+}
+
+#bio{
+    top: 15px;
+}
+
+#card1 .pfp{
+    font-size: 100px;
+    width: 130px;
+    background-color: white ;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: black;
+    border-width: 5px;
+    padding: 10px;
+    margin: 20px;
+    position:inherit;
+    top:0;
+    z-index: 1000;
+}
+
+#card1 .edit{
+    font-size: large;
+    position: relative;
+    bottom: 0px;
+    padding: 5px;
+    margin: 5px;
+}
+
+/*EDUCATION*/
+#card2{
+    position: relative;
+    top: 300px;
+    background-color: rgb(255, 255, 255);
+    border-style:solid;
+    border-width: 5px;
+    border-color: rgba(160, 156, 156, 0.336);
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    width: 800px;
+    height: fit-content;
+}
+
+#card2 .header{
+    background-color: rgb(27, 143, 238);
+    border-style: solid;
+    border-color: rgb(27, 143, 238);
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    width: 800px;
+    color: white;
+    font-size: xx-large;
+    position: relative;
+    top: -5px;
+    left: -5px;
+}
+
+#education{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 5px;
+}
+
+#education .date, #education .info{
+    margin-top: 20px;
+}
+#education .date{
+    color: gray;
+}
+
+#education .info{
+    font-size:20px;
+}
+
+/*FREIND REQUESTS */
+
+#card3{
+    position: relative;
+    left:0px;
+    background-color: rgb(255, 255, 255);
+    border-style:solid;
+    border-width: 5px;
+    border-color: rgba(160, 156, 156, 0.336);
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: fit-content;
+    min-height: 300px;
+    margin:20px;
+    margin-top:0;
+}
+
+#card3 .header{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(27, 143, 238);
+    color: white;
+    border-style: solid;
+    border-color: rgb(27, 143, 238);
+    height: 75px;
+    width: 400px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: -5px; 
+    left: -5px; 
+}
+
+.account button{
+    background-color: rgb(27, 143, 238);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    font-family: 'Roboto', sans-serif;
+}
+.decline button:hover{
+    box-shadow: 0px 0px 1px 1px rgba(1, 1, 15, 0.842);
+    background-color: rgb(212, 65, 65);
+}
+
+.accept button:hover{
+    box-shadow: 0px 0px 1px 1px rgba(1, 1, 15, 0.842);
+    background-color: rgb(65, 212, 102);
+}
+
+.account{
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    margin:15px;
+}
+
+.account .name{
+    margin: 15px;
+}
+
+.account .pfp{
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    background-color: white ;
+    border:5px solid black;
+    border-radius: 50%;
+    position:inherit;
+    z-index: 1000;
+    text-align:center;
+}
+
+
+/*FRIENDS*/
+#card4{
+    position: relative;
+    left:0px;
+    background-color: rgb(255, 255, 255);
+    border-style:solid;
+    border-width: 5px;
+    border-color: rgba(160, 156, 156, 0.336);
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: fit-content;
+    margin:20px;
+}
+
+#card4 .header{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(27, 143, 238);
+    color: white;
+    border-style: solid;
+    border-color: rgb(27, 143, 238);
+    height: 75px;
+    width: 400px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: -5px; 
+    left: -5px; 
+}
+
+.header p{
+    border:4px solid gray;
+    background-color:gray
+}
+
+.count{
+    text-align: center;
+    font-size: 20px;
+    background-color: gray;
+    border:5px, solid, gray;
+    border-radius: 50%;
+    height: 25px;
+    width: 40px;
+    margin: 10px;
+}
+
+.title{
+    text-align: center;
+    font-size: 25px;
+}
+
+.requests{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+#firends{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
